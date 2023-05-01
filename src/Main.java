@@ -2,8 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-      BankAccount bank = new BankAccount("ABC", "BA001");
-      bank.showMenu();
+        String nome;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite seu nome");
+        nome = scanner.nextLine();
+
+        BankAccount bank = new BankAccount(nome, "BA001");
+        bank.showMenu();
     }
 }
 
